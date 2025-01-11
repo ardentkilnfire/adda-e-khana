@@ -1,0 +1,165 @@
+/* Import Font (Requires Internet) */
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+
+/* CSS RESET */
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 99px;
+}
+
+input, textarea, select {
+  outline: none;
+  border: 1px solid rgba(0, 0,0, 0.25);
+  background-color: rgba(255, 255,255, 0.5);
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+
+  &:focus {
+    border-width: 2px;
+  }
+}
+
+/* =================[ Global Styles ]================= */
+
+:root {
+  --primary: #ffcb45;
+  --surface: #fff9ea;
+  --text-light: rgba(29, 29, 29, 0.7);
+  --black: #1d1d1d;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  color: var(--black);
+  font-size: 1.6rem;
+}
+
+header {
+  padding: 3.2rem;
+  text-align: center;
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-around;
+  gap: 7.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0,0, 0.25);
+
+  .logo {
+    span {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-right: 0.4rem;
+      text-decoration: none;
+    }
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 2.4rem;
+    font-size: 1.8rem;
+    color: var(--text-light);
+
+    li {
+
+      &:hover::after {
+        width: 75%;
+      }
+
+      &.active {
+        color: var(--black);
+        font-weight: 500;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0.4rem;
+        background-color: var(--primary);
+        border-radius: 3px;
+        transition: width 0.3s;
+      }
+    }
+  }
+
+  button {
+    background-color: var(--primary);
+    padding: 0.8rem 2.4rem;
+    font-weight: 600;
+    transition: all 0.3s;
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &:hover {
+      background-color: #ffcb45;
+    }
+  }
+}
+
+section {
+  padding: 7.2rem 4rem;
+}
+
+footer {
+  background-color: var(--surface);
+  padding: 3.2rem;
+  text-align: center;
+
+  p {
+    font-size: 1.4rem;
+  }
+}

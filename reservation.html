@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adda-e-Khana</title>
+
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/reservation.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <a class="logo" href="index.html">
+        <span>Adda-e-Khana</span>
+        <img src="images/logo.svg" alt="Adda-e-Khana" />
+      </a>
+
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li class="active"><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sign In Button -->
+      <button>
+        <i class="fa fa-sign-in fa-lg"></i>
+        <a href="not-implemented.html">Sign In</a>
+      </button>
+    </header>
+
+    <main>
+      <form action="#" method="post">
+        <img src="images/logo.svg" alt="Logo" />
+        <h2>Reserve your seat now!</h2>
+
+        <div class="inp-grp">
+          <label for="">Name: </label><input type="text" />
+        </div>
+        <div class="inp-grp">
+          <label for="">Email: </label><input type="email" />
+        </div>
+        <div class="inp-grp">
+          <label for="">Phone: </label><input type="number" />
+        </div>
+        <div class="inp-grp">
+          <label for="">Preferred Date:</label><input type="date" />
+        </div>
+        <div class="inp-grp">
+          <label for="">Table: </label
+          ><select>
+            <option value="table-1">Table 1</option>
+            <option value="table-2">Table 2</option>
+            <option value="table-3">Table 3</option>
+            <option value="table-4">Table 4</option>
+            <option value="table-lx">Luxury Table</option>
+          </select>
+        </div>
+
+        <button>Reserve Now!</button>
+      </form>
+    </main>
+
+    <footer style="position: fixed; bottom: 0; left: 0; width: 100%;" >
+      <p>© 2025 Adda-e-Khana | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

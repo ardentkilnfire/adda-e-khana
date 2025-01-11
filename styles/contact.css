@@ -1,0 +1,42 @@
+main {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 4.2rem;
+  align-items: stretch;
+
+  form {
+    padding: 2.4rem;
+    background-color: var(--surface);
+    min-width: 460px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    border: 8px solid var(--primary);
+
+    h2 {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .inp-group {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .map {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--primary);
+    padding: 0.8rem;
+  }
+
+  button {
+    padding: 1.2rem 1.6rem;
+    background-color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}

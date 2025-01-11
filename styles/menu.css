@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  text-align: center;
+
+  aside {
+    padding: 3.6rem 2.4rem;
+    flex-shrink: 0;
+    background-color: #f6f6f6;
+    position: relative;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+
+    .chips {
+      display: flex;
+      flex-direction: column;
+      margin: 3.2rem 0;
+      gap: 1.6rem;
+      position: sticky;
+      top: 12rem;
+
+      .chip {
+        border-radius: 99px;
+        text-align: left;
+        gap: 1.6rem;
+        padding: 0.8rem;
+        display: flex;
+        background-color: #ffca4586;
+      }
+    }
+  }
+
+  section {
+    padding: 3.2rem;
+    width: 100%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3.2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4.2rem;
+      margin-top: 2.4rem;
+      justify-content: center;
+
+      .item {
+        position: relative;
+        border: 1px solid gray;
+        padding: 2.4rem;
+        flex-basis: 320px;
+        border-radius: 8px;
+        display: block;
+        transition: 0.3s ease all;
+
+        img {
+          width: 34.4rem;
+          /* height: auto; */
+          border-radius: 50%;
+        }
+
+        span {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+
+        p {
+          margin-top: 0.8rem;
+          color: var(--text-light);
+        }
+
+        mark {
+          display: block;
+          width: 7.2rem;
+          padding: 0.4rem;
+          border-radius: 4px;
+          background-color: rgba(27, 197, 84, 0.25);
+          color: green;
+          position: absolute;
+          top: 1.6rem;
+          right: 1.6rem;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: var(--surface);
+        }
+      }
+    }
+  }
+}

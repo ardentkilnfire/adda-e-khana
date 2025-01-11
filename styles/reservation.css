@@ -1,0 +1,38 @@
+main {
+  padding: 6rem 1.2rem;
+  display: flex;
+  justify-content: center;
+
+  form {
+    border-radius: 12px;
+    background-color: #ffca4586;
+    padding: 2.4rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    .inp-grp {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      margin: 1.2rem auto;      
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    button {
+      padding: 1.2rem 1.6rem;
+      background-color: var(--primary);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-top: 1.2rem;
+    }
+  }
+}
